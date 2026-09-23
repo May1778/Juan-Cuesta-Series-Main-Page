@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End of Year 2026 Brawl</title>
+    <link rel="stylesheet" href="CSS\estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Science Gothic">
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+</head>
+
+
+
+<body>
+
+    <div id="menu-wrapper">
+
+
+
+        <header id="navbar">
+            <p>
+                &nbsp;<a href="index.html">INICIO</a> &nbsp; - &nbsp;
+                <a href="torneos.html">TORNEOS</a> &nbsp; - &nbsp;
+                <a id="actual" href="rankings.html">RANKINGS</a> &nbsp; &nbsp;
+
+                
+            </p>
+        </header>
+
+        <button id="toggleNav">☰ MENÚ</button>
+
+    </div>
+
+
+
+
+
+
+
+    <main>
+
+        <br><br><br><br><br><br>
+
+        <h1>RANKINGS POR SEASON</h1>
+
+        <br><br>
+
+        <h2><a>2026 End of Year</a></h2>
+
+
+        
+
+
+
+    </main>
+
+    <footer>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </footer>
+
+    <script>
+        const boton = document.getElementById("toggleNav");
+        const wrapper = document.getElementById("menu-wrapper");
+
+        boton.addEventListener("click", () => {
+            wrapper.classList.toggle("activo");
+            boton.textContent = wrapper.classList.contains("activo")
+                ? "✖ CERRAR"
+                : "☰ MENÚ";
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>

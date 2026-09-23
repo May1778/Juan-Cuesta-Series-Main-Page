@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio JCS</title>
+    <link rel="stylesheet" href="CSS\estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Science Gothic">
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+</head>
+
+
+
+<body>
+
+    <div id="menu-wrapper">
+
+
+
+        <header id="navbar">
+            <p>
+                &nbsp;<a id="actual" href="index.html">INICIO</a> &nbsp; - &nbsp;
+                <a href="torneos.html">TORNEOS</a> &nbsp; - &nbsp;
+                <a href="rankings.html">RANKINGS</a> &nbsp; &nbsp;
+
+
+            </p>
+        </header>
+
+        <button id="toggleNav">☰ MENÚ</button>
+
+    </div>
+
+
+
+
+
+
+
+    <main>
+
+        <br><br><br><br><br><br>
+
+        <h1>JUAN CUESTA SERIES</h1>
+
+        <br><br>
+
+        <img id="Plantita" src="imagenes/Plantita.png">
+
+        <br><br>
+
+        <p>Juan Cuesta Series es una serie de torneos que originalmente creé para hacer torneos de broma, pero
+            rápidamente
+            se salió de control contando con 10 entrants en el tercer torneo, viniendo de 2.
+        </p>
+
+        <br><br>
+
+        <p>Hemos separado los torneos en dos tipos diferentes de torneos, los random y los importantes</p>
+
+        <br><br>
+
+        <h2>Torneos random</h2>
+
+        <br><br>
+
+        <p>Los torneos random son torneos que se harán en días aleatorios de la semana que pueden ir desde ultimate con
+            alguna modificación en las normas hasta a juegos o mods totalmente distintos, contando con entregas en brawl
+            y melee.</p>
+
+        <br><br>
+
+        <h2>Torneos importantes</h2>
+
+        <br><br>
+
+        <p>Los torneos importantes son torneos exclusivamente de ultimate que se harán los sábados, los cuales cuentan
+            más que el resto al ser más stacked.</p>
+
+        <br><br>
+
+        <h2>Unirte</h2>
+
+        <br><br>
+
+        <p>Pulsa el botón de discord para abrir el enlace al discord, una vez dentro en auto-roles podrás elegir qué
+            torneos quieres que te avisemos. <strong>Atención, cuando entres se te pondrá un rol para prevenir spam, una
+                vez verifique que eres alguien real que conozcamos se te otorgará acceso. Para cualquier duda, mi
+                discord es @may17787</strong></p>
+
+        <br><br>
+
+        <a target="_blank" href="
+https://discord.gg/JafkeVkceG"><img id="Plantita" src="imagenes/discord_PNG3.png"></a>
+
+        <br><br>
+
+        <h2>Rankings</h2>
+
+        <br><br>
+
+        <p>En el servidor tenemos un sistema de ranking en base a las victorias y las importancias de esta y haremos un
+            ranking al inicio del año y en verano para cada juego.</p>
+
+        <br><br>
+
+        <h2>Navega por el resto de las páginas usando el menú de arriba</h2>
+
+        <br><br>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </footer>
+
+    <script>
+        const boton = document.getElementById("toggleNav");
+        const wrapper = document.getElementById("menu-wrapper");
+
+        boton.addEventListener("click", () => {
+            wrapper.classList.toggle("activo");
+            boton.textContent = wrapper.classList.contains("activo")
+                ? "✖ CERRAR"
+                : "☰ MENÚ";
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
