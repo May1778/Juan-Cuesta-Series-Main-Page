@@ -66,6 +66,38 @@
 
         <br><br>
 
+        <h2>Juan Cuesta Random Series #6</h2>
+
+        <br><br>
+
+        <img id="Bracket" src="imagenes/Torneo.png">
+
+        <br><br>
+
+        <p><a target="_blank" href="https://www.start.gg/tournament/juan-cuesta-random-series-6/details">Startgg</a></p>
+
+        <br><br>
+
+        <p>-Torneo donde solo se permitirá el uso de personajes de la tier C de la tierlist</p>
+
+        <br><br>
+
+        <p>- Fecha: 24/09/2026 de 21:30/22:00 a 00:00 max</p>
+
+        <br><br>
+
+        <p>- Límite de 6 attendees</p>
+
+        <br><br>
+
+        <p>INICIO DEL TORNEO EN</p>
+
+        <div id="timer"></div>
+
+        <br><br>
+
+        
+
         <h2 id="pasados">TORNEOS PASADOS</h2>
 
         <br><br>
@@ -77,7 +109,7 @@
         <h2>Juan Cuesta Random Series #5</h2>
 
         <br><br>
-        
+
         <p><a target="_blank" href="https://www.start.gg/tournament/juan-cuesta-random-series-5/details">Startgg</a></p>
 
         <br><br>
@@ -109,7 +141,7 @@
         <h2>Juan Cuesta Weekly Series #2</h2>
 
         <br><br>
-        
+
         <p><a target="_blank" href="https://www.start.gg/tournament/juan-cuesta-weekly-series-2/details">Startgg</a></p>
 
         <br><br>
@@ -141,7 +173,7 @@
         <h2>Juan Cuesta Random Series #4</h2>
 
         <br><br>
-        
+
         <p><a target="_blank" href="https://www.start.gg/tournament/juan-cuesta-random-series-4/details">Startgg</a></p>
 
         <br><br>
@@ -173,7 +205,7 @@
         <h2>Juan Cuesta Random Series #3</h2>
 
         <br><br>
-        
+
         <p><a target="_blank" href="https://www.start.gg/tournament/juan-cuesta-random-series-3/details">Startgg</a></p>
 
         <br><br>
@@ -205,7 +237,7 @@
         <h2>Juan Cuesta Weekly Series #1</h2>
 
         <br><br>
-        
+
         <p><a target="_blank" href="https://www.start.gg/tournament/juan-cuesta-weekly-series-1/details">Startgg</a></p>
 
         <br><br>
@@ -237,7 +269,7 @@
         <h2>Juan Cuesta Random Series #2</h2>
 
         <br><br>
-        
+
         <p><a target="_blank" href="https://www.start.gg/tournament/juan-cuesta-random-series-2/details">Startgg</a></p>
 
         <br><br>
@@ -269,7 +301,7 @@
         <h2>Juan Cuesta Random Series #1</h2>
 
         <br><br>
-        
+
         <p><a target="_blank" href="https://www.start.gg/tournament/juan-cuesta-random-series-1/details">Startgg</a></p>
 
         <br><br>
@@ -301,7 +333,7 @@
         <h2>Juan Cuesta Series #3</h2>
 
         <br><br>
-        
+
         <p><a target="_blank" href="https://www.start.gg/tournament/juan-cuesta-series-3/details">Startgg</a></p>
 
         <br><br>
@@ -330,7 +362,7 @@
 
         <br><br>
 
-        
+
 
 
 
@@ -357,6 +389,33 @@
         });
 
 
+    </script>
+
+        <script>
+        const countDownDate = new Date("Dec 06, 2026 00:00:00").getTime();
+
+        const x = setInterval(function () {
+
+            const now = new Date().getTime();
+
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML =
+                `<span class="time-unit">${days}d</span> ` +
+                `<span class="time-unit">${hours}h</span> ` +
+                `<span class="time-unit">${minutes}m</span> ` +
+                `<span class="time-unit">${seconds}s</span>`;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
     </script>
 
 

@@ -175,6 +175,12 @@ body {
   #Bracket:hover {
     transform: scale(1.05);
   }
+  #timer 
+  { font-family: monospace; font-size: 24px; text-align: center; margin-top: 20px; 
+  }
+  .time-unit 
+  { margin: 0 10px; 
+  }
 
 
 
